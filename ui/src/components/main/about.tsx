@@ -48,7 +48,7 @@ const About = () => {
             className='bg-neutral-900 mt-10 min-h-screen-3/4'
         >
             <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                About :
+                About
             </h2>
             <section className='relative mt-12'>
                 <div className='aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:h-full lg:w-1/2 lg:pr-4 xl:pr-16'>

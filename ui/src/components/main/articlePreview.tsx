@@ -28,7 +28,7 @@ const ArticlePreview = ({ articles }: Props) => {
     return (
         <div ref={latestRef} id='latest' className='mt-10 min-h-screen-3/4'>
             <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                Latest Writings :
+                Latest Writings
             </h2>
 
             <div className='grid gap-16 mt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12'>

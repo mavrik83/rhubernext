@@ -1,6 +1,7 @@
 {
     "extends": [
         "next/core-web-vitals",
+        "@typescript-eslint/parser",
         "plugin:mdx/recommended",
         "airbnb",
         "airbnb-typescript",

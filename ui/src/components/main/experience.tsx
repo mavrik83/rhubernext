@@ -1,6 +1,7 @@
 /* eslint-disable consistent-return */
 import React from 'react';
 import { AiFillCode } from 'react-icons/ai';
+import { GiHelicopter, GiUsaFlag } from 'react-icons/gi';
 import { RiDoubleQuotesL } from 'react-icons/ri';
 import { useInView } from 'react-intersection-observer';
 import { classNames } from '../../utils/classNames';
@@ -33,7 +34,7 @@ const expItems = [
         date: 'May 2013 - March 2018',
         description:
             'I was a Site Mechanic for EMS helicopters. My responsibilities included maintaining the aircraft, troubleshooting, and performing routine inspections. I also worked on the maintenance of the ground support equipment and administrative tasks for the site.',
-        icon: AiFillCode,
+        icon: GiHelicopter,
         lineColor: 'border-orange-500',
         iconColor: 'bg-gradient-to-b from-orange-600 to-orange-500',
     },
@@ -43,7 +44,7 @@ const expItems = [
         date: 'November 2001 - December 2011',
         description:
             'I broke stuff and fixed stuff. Then I grew up a little bit and fixed stuff better and broke stuff less. Seriously though, I grew up in the Army and learned to be a leader, a team player, and a problem solver.',
-        icon: AiFillCode,
+        icon: GiUsaFlag,
         lineColor: 'border-orange-400',
         iconColor: 'bg-gradient-to-b from-orange-500 to-orange-400',
     },
@@ -68,7 +69,7 @@ const Experience = () => {
             className='mt-10 min-h-screen-3/4'
         >
             <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                Experience :
+                Experience
             </h2>
             <ol className='ml-5 mt-12'>
                 {expItems.map((item) => (

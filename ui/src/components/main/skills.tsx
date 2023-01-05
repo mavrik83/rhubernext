@@ -20,10 +20,16 @@ const Skills = () => {
 
     return (
         <div ref={skillsRef} id='skills' className='mt-10 min-h-screen-3/4'>
-            <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                Skills :
+            <h2 className='mb-2 text-3xl tracking-tight text-neutral-200 sm:text-4xl justify-center'>
+                Skills
             </h2>
-            <div className='container mt-12 mx-auto grid grid-cols-2 xl:grid-cols-3 gap-6'>
+            <span className='mr-3 inline-flex items-center rounded-full bg-orange-600 px-2.5 py-0.5 text-xs font-light text-neutral-200 bg-opacity-50'>
+                Confidence
+            </span>
+            <span className='ml-3 inline-flex items-center rounded-full bg-teal-600 px-2.5 py-0.5 text-xs font-light text-neutral-200 bg-opacity-50'>
+                Interest
+            </span>
+            <div className='container mt-4 mx-auto grid grid-cols-2 xl:grid-cols-3 gap-6'>
                 {icons
                     .sort((a, b) => b.confidence - a.confidence)
                     .sort((a, b) => b.interest - a.interest)
@@ -38,12 +44,7 @@ const Skills = () => {
                             >
                                 <icon.icon className='w-14 h-auto text-neutral-200' />
                                 <div className='ml-4'>
-                                    <div className='mb-2'>
-                                        <p>
-                                            <span className='text-xs text-neutral-200'>
-                                                Confidence:
-                                            </span>
-                                        </p>
+                                    <div className='my-4'>
                                         <div className='bg-neutral-700 w-20 md:w-30 lg:w-40 h-1 rounded-full overflow-hidden self-center'>
                                             <div
                                                 className='bg-orange-600 h-full rounded-full opacity-50'
@@ -55,15 +56,10 @@ const Skills = () => {
                                             />
                                         </div>
                                     </div>
-                                    <div className='my-2'>
-                                        <p>
-                                            <span className='text-xs text-neutral-200'>
-                                                Interest:
-                                            </span>
-                                        </p>
+                                    <div className='my-4'>
                                         <div className='bg-neutral-700 w-20 md:w-30 lg:w-40 h-1 rounded-full overflow-hidden self-center '>
                                             <div
-                                                className='bg-orange-600 h-full rounded-full opacity-50'
+                                                className='bg-teal-600 h-full rounded-full opacity-50'
                                                 style={{
                                                     width: `${
                                                         icon.interest * 10
