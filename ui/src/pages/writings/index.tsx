@@ -64,6 +64,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                         <Link
                             href={`/writings/${article.slug}`}
                             key={article.slug}
+                            scroll={true}
                         >
                             <a className='border-2 border-orange-600 border-opacity-50 rounded-md bg-inherit hover:bg-neutral-800 hover:border-neutral-800 transition-all duration-300'>
                                 <div className='flex-shrink-0'>

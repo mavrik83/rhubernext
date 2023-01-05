@@ -122,6 +122,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
                                                     <Link
                                                         href={item.href}
                                                         key={item.id}
+                                                        scroll
                                                     >
                                                         <a
                                                             onClick={() =>
@@ -233,7 +234,11 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
                             {navState.map((item) => {
                                 if (item.name === 'Writings') {
                                     return (
-                                        <Link href={item.href} key={item.id}>
+                                        <Link
+                                            href={item.href}
+                                            key={item.id}
+                                            scroll
+                                        >
                                             <a
                                                 className={classNames(
                                                     pathname === item.href
