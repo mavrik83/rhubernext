@@ -2,7 +2,7 @@
 title: "From Philosophy to Software Engineering"
 synopsis: "I'm a philosopher, and I've always loved logic. It's the foundation of so much of what we do as human beings. In this article I'll explain how my love for philosophy led me into software engineering, and how it gave me an advantage over other programmers who didn't come from this background."
 date: "2022-12-24"
-timeToRead: 3
+timeToRead: 4
 category: "philosophy"
 author: "ChatGPT & Ryan Huber"
 ---
