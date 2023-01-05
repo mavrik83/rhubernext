@@ -23,7 +23,7 @@ const expItems = [
         title: 'Software Engineer',
         date: 'April 2021 - Present',
         description:
-            'Non-profit orginization to facilitate food donations and campaigns for local food banks. Worked with TypeScript, Next.js, abd GraphQL. Built out a new donations page and flow for the website.',
+            'Non-profit orginization to facilitate food donations and campaigns for local food banks. Worked with TypeScript, Next.js, and GraphQL. Built out a new donations page and flow for the website.',
         icon: AiFillCode,
         lineColor: 'border-orange-600',
         iconColor: 'bg-gradient-to-b from-orange-700 to-orange-600',
