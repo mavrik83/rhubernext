@@ -20,7 +20,7 @@ const Article: NextPage<Props> = ({ article }: Props) => {
     return (
         <div>
             <Head>
-                <title>Ryan Huber</title>
+                <title>{article.meta.title}</title>
                 <meta name='description' content='Hire me!' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>

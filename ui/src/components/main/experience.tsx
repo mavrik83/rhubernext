@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 import React from 'react';
 import { AiFillCode } from 'react-icons/ai';
-import { GiHelicopter, GiUsaFlag } from 'react-icons/gi';
+import { GiBookshelf, GiHelicopter, GiUsaFlag } from 'react-icons/gi';
 import { RiDoubleQuotesL } from 'react-icons/ri';
 import { useInView } from 'react-intersection-observer';
 import { classNames } from '../../utils/classNames';
@@ -15,16 +15,26 @@ const expItems = [
         description:
             'Working primarily with TypeScript, React, Express, and PostgreSQL contributing to a real estate data platform. I am currently working on our SSO gateway and data pipelines for metrics and reporting.',
         icon: AiFillCode,
-        lineColor: 'border-orange-700',
-        iconColor: 'bg-orange-700',
+        lineColor: 'border-orange-800',
+        iconColor: 'bg-orange-800',
     },
     {
         company: 'Souper Bowl of Caring',
         title: 'Software Engineer',
         date: 'April 2021 - Present',
         description:
-            'Non-profit orginization to facilitate food donations and campaigns for local food banks. Worked with TypeScript, Next.js, and GraphQL. Built out a new donations page and flow for the website.',
+            'Non-profit orginization platform to facilitate food donations and campaigns for local food banks. Worked with TypeScript, Next.js, and GraphQL. Built out a new donations page and form UI flow for the website.',
         icon: AiFillCode,
+        lineColor: 'border-orange-700',
+        iconColor: 'bg-gradient-to-b from-orange-800 to-orange-700',
+    },
+    {
+        company: 'American University',
+        title: 'Bachelor of Arts, Philosophy',
+        date: 'Jan 2018 - Jan 2020',
+        description:
+            'I entered the university as a philosophy major because I wanted to learn how to think better. The thinking tools I gained in philosophy have been invaluable in my career as a software engineer.',
+        icon: GiBookshelf,
         lineColor: 'border-orange-600',
         iconColor: 'bg-gradient-to-b from-orange-700 to-orange-600',
     },
@@ -33,7 +43,7 @@ const expItems = [
         title: 'Helicopter Mechanic',
         date: 'May 2013 - March 2018',
         description:
-            'I was a Site Mechanic for EMS helicopters. My responsibilities included maintaining the aircraft, troubleshooting, and performing routine inspections. I also worked on the maintenance of the ground support equipment and administrative tasks for the site.',
+            'I was a Site Mechanic for EMS helicopters. My responsibilities included maintaining our aircraft, troubleshooting electircal and mechanical issues, and performing routine inspections. I also worked on the maintenance of the ground support equipment and administrative tasks for the site.',
         icon: GiHelicopter,
         lineColor: 'border-orange-500',
         iconColor: 'bg-gradient-to-b from-orange-600 to-orange-500',

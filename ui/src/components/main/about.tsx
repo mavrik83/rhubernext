@@ -10,22 +10,22 @@ const blurbs = [
     {
         name: 'Soldier',
         description:
-            'The Army taught me many things. Notably, the importance of teamwork, leadership, and the value focus and discipline. Leadership development and the ability to adapt to changing circumstances were cenral to my time in the Army.',
+            'The Army taught me many things. Notably, the importance of teamwork, leadership, and the value of focus and discipline. Leadership development and the ability to adapt to changing circumstances were central to my time in the Army.',
     },
     {
         name: 'Helicopter Mechanic',
         description:
-            "What can I say? Even pilots need heros. I was a helicopter machinac for 16 years; 10 in the Army and 6 in the civilian sector. Attention to detail and solid troubleshooting skills are essential. You can't just pull over and call AAA when you're 1000 feet in the air.",
+            "What can I say? Even pilots need heros. I was a helicopter mechanic for 16 years; 10 in the Army and 6 in the civilian sector. Attention to detail and solid troubleshooting skills are essential. You can't just pull over and call AAA when you're 1000 feet in the air.",
     },
     {
         name: 'Philosopher',
         description:
-            "Critical thinking. Logic. Reasoning. Problem solving. These are the skills that I've developed through my studies in philosophy. I've learned to think clearly and to communicate my ideas effectively. The intersection of philosophy and technology is a focus of my writings here.",
+            "Critical thinking. Logic. Reasoning. Problem solving. These are some of the skills that I've developed through philosophy. I've learned to think clearly and to communicate my ideas effectively. The intersection of philosophy and technology is a focus of my writings here.",
     },
     {
         name: 'Software Engineer',
         description:
-            'So I gave an awesome job as helicopter mechanic and a cushy seat as a philosopher to become a software engineer. I love it. I love the challenge of solving problems. I love the satisfaction of building something that works. I love the feeling of accomplishment when I finish a project.',
+            'So I gave up an awesome job as helicopter mechanic and then a cushy seat as a philosopher to become a software engineer. I love it. I love the challenge of solving problems. I love the satisfaction of building something that works. I love the feeling of accomplishment when I finish a project. I love knowing that I can make a difference in the world.',
     },
 ];
 

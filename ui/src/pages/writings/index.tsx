@@ -26,7 +26,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
     return (
         <div className='min-h-fit my-5'>
             <Head>
-                <title>Ryan Huber</title>
+                <title>Witings</title>
                 <meta name='description' content='Hire me!' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
@@ -40,14 +40,14 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                                 </h1>
                                 <p className='text-base leading-5 mt-5 text-neutral-200 md:w-8/12 lg:w-11/12 lg:text-left text-center'>
                                     Just a collection of my writings. I write
-                                    about things that I find interesting and I
-                                    hope you&apos;ll find them as interesting as
-                                    I do. <br /> <br /> (These images are
-                                    randomly generated at build time, so
-                                    don&apos;t take them too seriously.)
+                                    about things that I find interesting. I hope
+                                    you&apos;ll find them as interesting as I
+                                    do. <br /> <br /> (The images are randomly
+                                    generated, so don&apos;t take them too
+                                    seriously.)
                                 </p>
                             </div>
-                            <div className='lg:w-5/12 lg:ml-10 h-full w-full'>
+                            <div className='lg:w-5/12 lg:ml-10 h-full w-full hidden lg:block'>
                                 <Image
                                     src='https://source.unsplash.com/random/500×500/?writing,philosophy,technology,mechanic'
                                     className='w-full block h-80 lg:h-full object-cover object-center rounded-tr-3xl rounded-bl-3xl'
@@ -66,7 +66,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                             key={article.slug}
                             scroll={true}
                         >
-                            <a className='border-2 border-orange-600 border-opacity-50 rounded-md bg-inherit hover:bg-neutral-800 hover:border-neutral-800 transition-all duration-300'>
+                            <a className='mx-auto border-2 max-w-sm border-orange-600 border-opacity-50 rounded-md bg-inherit hover:bg-neutral-800 hover:border-neutral-800 transition-all duration-300'>
                                 <div className='flex-shrink-0'>
                                     <Image
                                         className='h-20 w-auto object-cover rounded-t-md'

@@ -23,7 +23,7 @@ const icons = [
         confidence: 9,
         interest: 10,
         description:
-            'Typescript is my go-to language for web development and I have experience with both React and Node.js using Typescript. Even for smaller projects, I prefer to use Typescript over Javascript because of the sweet DX it provides; the added configuration is worth every minute.',
+            'Typescript is my go-to language for web development and I have experience with both React and Node.js using Typescript. Even for smaller projects, I prefer to use Typescript over Javascript because of the sweet DX it provides; any added configuration is worth every minute.',
     },
     {
         icon: SiJavascript,
@@ -31,7 +31,7 @@ const icons = [
         confidence: 9,
         interest: 5,
         description:
-            'Since I started using Typescript, I have not used Javascript much; I much prefer the type safety that Typescript provides. However, I have experience with Javascript and I am familiar with the syntax and the quirks of the language.',
+            'Since I started using Typescript, I have not used Javascript much; I much prefer the type safety that Typescript provides. However, vanilla Javascript is still part of my corpus of knowledge.',
     },
     {
         icon: SiDocker,
@@ -47,7 +47,7 @@ const icons = [
         confidence: 8,
         interest: 10,
         description:
-            "Can we even be called web developers if we don't know React? I prefer to use React with Typescript, but I have experience with React and Javascript as well. As an aside, Create React App is, in my opinion, a wholly inadequate tool for building a production-ready application (unless you eject!).",
+            "Can we even be called web developers if we don't know React? I have a strong preference for React with Typescript. As an aside, Create React App is, in my opinion, a wholly inadequate tool for building a production-ready application (unless you eject!).",
     },
     {
         icon: SiPostgresql,
@@ -55,7 +55,7 @@ const icons = [
         confidence: 6,
         interest: 9,
         description:
-            "I've spent some time tooling around with Postgres. I'm a big fan of leveraging views and stored procedures to make the database do the heavy lifting.",
+            "I've spent some time tooling around with Postgres professionally and on personal projects. I'm a big fan of leveraging views and stored procedures to make the database do the heavy lifting when appropriate.",
     },
     {
         icon: SiTailwindcss,
@@ -63,7 +63,7 @@ const icons = [
         confidence: 8,
         interest: 10,
         description:
-            'I absolutely love Tailwindcss. It is my go-to CSS framework for any project. I have experience with Tailwindcss and I am familiar with the syntax and the quirks of the framework. Full disclosure: vanilla CSS is not my strong suit, but I can crank it out when I need to.',
+            'I absolutely love Tailwindcss. It is my go-to CSS framework for any project. I particularly like combining Headless-Ui with Tailwind. Full disclosure: vanilla CSS is not my strong suit, but I can crank it out when I need to.',
     },
     {
         icon: SiGit,
@@ -78,7 +78,7 @@ const icons = [
         confidence: 6,
         interest: 9,
         description:
-            'This is my goto database for small, personal projects. Peronally, I love the combo of Mongodb and Prisma.',
+            "This is my goto database for small, personal projects. Peronally, I love the combo of Mongodb and Prisma. While I haven't used it professionally yet, I'm always looking to see how I could use it to solve problems.",
     },
     {
         icon: SiNextdotjs,
@@ -86,7 +86,7 @@ const icons = [
         confidence: 8,
         interest: 10,
         description:
-            "Is Next.js the best framework for building a React application? I don't know, but I do know that I love it. I'm currently using Next.js for this website and working on migrating a production CRA app to Next.js.",
+            "Is Next.js the best framework for building React applications? I don't know, but I do know that I love it. I'm currently using Next.js for this website and working on migrating a production CRA app to Next.js.",
     },
     {
         icon: SiNodedotjs,
@@ -125,7 +125,7 @@ const icons = [
         confidence: 5,
         interest: 6,
         description:
-            "I've been tinkering with Photoshop for a while. I'm not a designer, but I can get the job done.",
+            "I've been dabbling with Photoshop for a years. I'm not a designer, but I can do basic tasks with Photoshop.",
     },
     {
         icon: SiAdobeillustrator,
