@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { CSSProperties, useEffect } from 'react';
 import { useRemark } from 'react-remark';
+import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import { getAllArticles } from '../../utils/articleUtils';
 import { ArticleInfo } from '../../types/articles';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 interface Props {
     article: ArticleInfo;
@@ -34,9 +37,36 @@ const Article: NextPage<Props> = ({ article }: Props) => {
                     </h1>
                     <p className='text-sm text-neutral-200'>{`by ${article.meta.author}`}</p>
                 </div>
-                <div className='prose prose-neutral text-neutral-200 leading-relaxed prose-headings:text-neutral-200 prose-headings:font-light prose-h1:hidden prose-strong:text-neutral-200 prose-strong:font-medium'>
+                <ReactMarkdown
+                    className='prose prose-neutral text-neutral-200 leading-relaxed prose-headings:text-neutral-200 prose-headings:font-light prose-h1:hidden prose-strong:text-neutral-200 prose-strong:font-medium'
+                    children={article.content}
+                    components={{
+                        code({ node, inline, className, children, ...props }) {
+                            const match = /language-(\w+)/.exec(
+                                className || '',
+                            );
+                            return !inline && match ? (
+                                <SyntaxHighlighter
+                                    children={String(children).replace(
+                                        /\n$/,
+                                        '',
+                                    )}
+                                    style={vscDarkPlus as any}
+                                    language={match[1]}
+                                    PreTag='div'
+                                    {...props}
+                                />
+                            ) : (
+                                <code className={className} {...props}>
+                                    {children}
+                                </code>
+                            );
+                        },
+                    }}
+                />
+                {/* <div className='prose prose-neutral text-neutral-200 leading-relaxed prose-headings:text-neutral-200 prose-headings:font-light prose-h1:hidden prose-strong:text-neutral-200 prose-strong:font-medium'>
                     {reactContent}
-                </div>
+                </div> */}
             </article>
         </div>
     );

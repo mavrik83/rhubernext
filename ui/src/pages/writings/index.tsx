@@ -8,6 +8,7 @@ import { TbCalendarTime } from 'react-icons/tb';
 import { ArticleInfo, ArticleMeta } from '../../types/articles';
 import { getAllArticles } from '../../utils/articleUtils';
 import { capitalizeFirstWord } from '../../utils/utils';
+import avatarPic from '../../../public/IMG_6081.png';
 
 interface Props {
     allArticles: ArticleInfo[];
@@ -26,7 +27,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
     return (
         <div className='min-h-fit my-5'>
             <Head>
-                <title>Witings</title>
+                <title>Writings</title>
                 <meta name='description' content='Hire me!' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
@@ -42,15 +43,17 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                                     Just a collection of my writings. I write
                                     about things that I find interesting. I hope
                                     you&apos;ll find them as interesting as I
-                                    do. <br /> <br /> (The images are randomly
-                                    generated, so don&apos;t take them too
-                                    seriously.)
+                                    do. <br /> <br />{' '}
+                                    <span className='text-sm italic'>
+                                        (The images are randomly generated, so
+                                        don&apos;t take them too seriously.)
+                                    </span>
                                 </p>
                             </div>
                             <div className='lg:w-5/12 lg:ml-10 h-full w-full hidden lg:block'>
                                 <Image
                                     src='https://source.unsplash.com/random/500×500/?writing,philosophy,technology,mechanic'
-                                    className='w-full block h-80 lg:h-full object-cover object-center rounded-tr-3xl rounded-bl-3xl'
+                                    className='w-full block h-80 lg:h-full object-cover object-center rounded-tr-[5rem] rounded-bl-[5rem] brightness-50'
                                     alt='hero-pic'
                                     width={500}
                                     height={500}
@@ -75,7 +78,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                                         },${article.synopsis
                                             .split(' ')
                                             [
-                                                randomInteger(1, 20)
+                                                randomInteger(1, 10)
                                             ].toLowerCase()}`}
                                         alt='Random unsplash image'
                                         width={400}
@@ -101,7 +104,7 @@ const Writings: NextPage<Props> = ({ allArticles }: Props) => {
                                 <div className='mt-4 flex items-center'>
                                     <div>
                                         <div className='flex m-4 space-x-1 text-sm text-neutral-200'>
-                                            <TbCalendarTime className='flex-shrink-0 h-4 w-4 text-orange-600' />
+                                            <TbCalendarTime className='flex-shrink-0 h-4 w-4 text-teal-500' />
                                             <time dateTime={article.date}>
                                                 {article.date}
                                             </time>
