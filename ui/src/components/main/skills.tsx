@@ -1,10 +1,11 @@
 /* eslint-disable consistent-return */
 import React from 'react';
 import { Popover } from '@headlessui/react';
-import { RiDoubleQuotesL } from 'react-icons/ri';
 import { useInView } from 'react-intersection-observer';
-import { icons } from '../../utils/iconArray';
+import { skills } from '../../utils/skillsArray';
 import { useNavState } from '../../utils/zustand/navState';
+import { FancyQuote } from '../reusable/quote';
+import { SectionTitle } from '../reusable/sectionTitle';
 
 const Skills = () => {
     const { ref: skillsRef, inView } = useInView({
@@ -19,10 +20,8 @@ const Skills = () => {
     }, [inView]);
 
     return (
-        <div ref={skillsRef} id='skills' className='mt-10 min-h-screen-3/4'>
-            <h2 className='mb-2 text-3xl tracking-tight text-neutral-200 sm:text-4xl justify-center'>
-                Skills
-            </h2>
+        <div ref={skillsRef} id='skills' className='my-10 min-h-screen-3/4'>
+            <SectionTitle text='Skills' />
             <span className='mr-3 inline-flex items-center rounded-full bg-orange-600 px-2.5 py-0.5 text-xs font-light text-neutral-200 bg-opacity-50'>
                 Confidence
             </span>
@@ -30,7 +29,7 @@ const Skills = () => {
                 Interest
             </span>
             <div className='container mt-4 mx-auto grid grid-cols-2 xl:grid-cols-3 gap-6'>
-                {icons
+                {skills
                     .sort((a, b) => b.confidence - a.confidence)
                     .sort((a, b) => b.interest - a.interest)
                     .map((icon) => (
@@ -88,24 +87,7 @@ const Skills = () => {
                         </Popover>
                     ))}
             </div>
-            <div className='py-12 px-4 mx-auto sm:px-6 md:flex md:flex-col md:py-24 md:px-30 md:max-w-screen-md lg:px-40 opacity-30 hover:opacity-60 hover:scale-110 transition-all transform ease-in-out duration-[3000ms]'>
-                <blockquote className='mt-6 md:flex md:flex-grow md:flex-col pointer-events-none'>
-                    <div className='relative text-lg text-neutral-200 md:flex-grow'>
-                        <RiDoubleQuotesL className='absolute top-0 left-0 h-12 w-12 -translate-x-3 -translate-y-2 transform text-orange-600 opacity-50' />
-                        <p className='relative italic'>
-                            Beauty of style and harmony and grace and good
-                            rhythm depend on Simplicity.
-                        </p>
-                    </div>
-                    <footer className='mt-8'>
-                        <div className='flex flex-row-reverse sm:flex-row'>
-                            <div className='mr-10 sm:ml-10'>
-                                <div className='text-neutral-200'>Plato</div>
-                            </div>
-                        </div>
-                    </footer>
-                </blockquote>
-            </div>
+            <FancyQuote quoteId={5} />
         </div>
     );
 };

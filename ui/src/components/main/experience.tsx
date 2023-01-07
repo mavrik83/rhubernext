@@ -2,10 +2,11 @@
 import React from 'react';
 import { AiFillCode } from 'react-icons/ai';
 import { GiBookshelf, GiHelicopter, GiUsaFlag } from 'react-icons/gi';
-import { RiDoubleQuotesL } from 'react-icons/ri';
 import { useInView } from 'react-intersection-observer';
 import { classNames } from '../../utils/classNames';
 import { useNavState } from '../../utils/zustand/navState';
+import { FancyQuote } from '../reusable/quote';
+import { SectionTitle } from '../reusable/sectionTitle';
 
 const expItems = [
     {
@@ -76,11 +77,9 @@ const Experience = () => {
         <div
             ref={experienceRef}
             id='experience'
-            className='mt-10 min-h-screen-3/4'
+            className='my-10 min-h-screen-3/4'
         >
-            <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                Experience
-            </h2>
+            <SectionTitle text='Experience' />
             <ol className='ml-5 mt-12'>
                 {expItems.map((item) => (
                     <li
@@ -105,7 +104,7 @@ const Experience = () => {
                                         {item.date}
                                     </p>
                                 </div>
-                                <p className='text-neutral-200 text-lg sm:mb-4'>
+                                <p className='text-teal-500 text-lg sm:mb-4'>
                                     {item.title}
                                 </p>
                                 <p className='text-neutral-200 sm:mb-6'>
@@ -116,27 +115,7 @@ const Experience = () => {
                     </li>
                 ))}
             </ol>
-            <div className='py-12 px-4 mx-auto sm:px-6 md:flex md:flex-col md:py-24 md:px-30 md:max-w-screen-md lg:px-40 opacity-30 hover:opacity-60 hover:scale-110 transition-all transform ease-in-out duration-[3000ms]'>
-                <blockquote className='mt-6 md:flex md:flex-grow md:flex-col pointer-events-none'>
-                    <div className='relative text-lg text-neutral-200 md:flex-grow'>
-                        <RiDoubleQuotesL className='absolute top-0 left-0 h-12 w-12 -translate-x-3 -translate-y-2 transform text-orange-600 opacity-50' />
-                        <p className='relative italic'>
-                            Man is born free, and he is everywhere in chains.
-                            Those who think themselves the masters of others are
-                            indeed greater slaves than they.
-                        </p>
-                    </div>
-                    <footer className='mt-8'>
-                        <div className='flex flex-row-reverse sm:flex-row'>
-                            <div className='mr-10 sm:ml-10'>
-                                <div className='text-neutral-200'>
-                                    Jean-Jacques Rousseau
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </blockquote>
-            </div>
+            <FancyQuote quoteId={6} />
         </div>
     );
 };

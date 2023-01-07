@@ -1,10 +1,11 @@
 /* eslint-disable consistent-return */
 import React from 'react';
 import Image from 'next/image';
-import { RiDoubleQuotesL } from 'react-icons/ri';
 import { useInView } from 'react-intersection-observer';
 import profilePic from '../../../public/rjhuber_profile.png';
 import { useNavState } from '../../utils/zustand/navState';
+import { FancyQuote } from '../reusable/quote';
+import { SectionTitle } from '../reusable/sectionTitle';
 
 const blurbs = [
     {
@@ -45,11 +46,9 @@ const About = () => {
         <div
             ref={aboutRef}
             id='about'
-            className='bg-neutral-900 mt-10 min-h-screen-3/4'
+            className='bg-neutral-900 my-10 min-h-screen-3/4'
         >
-            <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                About
-            </h2>
+            <SectionTitle text='About' />
             <section className='relative mt-12'>
                 <div className='aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:h-full lg:w-1/2 lg:pr-4 xl:pr-16'>
                     <Image
@@ -90,27 +89,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <div className='py-12 px-4 mx-auto sm:px-6 md:flex md:flex-col md:py-24 md:px-30 md:max-w-screen-md lg:px-40 opacity-30 hover:opacity-60 hover:scale-110 transition-all transform ease-in-out duration-[3000ms]'>
-                <blockquote className='mt-6 md:flex md:flex-grow md:flex-col pointer-events-none'>
-                    <div className='relative text-lg text-neutral-200 md:flex-grow'>
-                        <RiDoubleQuotesL className='absolute top-0 left-0 h-12 w-12 -translate-x-3 -translate-y-2 transform text-orange-600 opacity-50' />
-                        <p className='relative italic'>
-                            You have your way. I have my way. As for the right
-                            way, the correct way, and the only way, it does not
-                            exist.
-                        </p>
-                    </div>
-                    <footer className='mt-8'>
-                        <div className='flex flex-row-reverse sm:flex-row'>
-                            <div className='mr-10 sm:ml-10'>
-                                <div className='text-neutral-200'>
-                                    Friedrich Nietzsche
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </blockquote>
-            </div>
+            <FancyQuote quoteId={4} />
         </div>
     );
 };

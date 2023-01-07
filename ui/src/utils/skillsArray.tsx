@@ -16,7 +16,7 @@ import {
     SiAdobeillustrator,
 } from 'react-icons/si';
 
-const icons = [
+const skills = [
     {
         icon: SiTypescript,
         title: 'Typescript',
@@ -137,4 +137,4 @@ const icons = [
     },
 ];
 
-export { icons };
+export { skills };

@@ -2,12 +2,13 @@
 /* eslint-disable consistent-return */
 import Link from 'next/link';
 import React from 'react';
-import { RiDoubleQuotesL } from 'react-icons/ri';
 import { TbCalendarTime } from 'react-icons/tb';
 import { useInView } from 'react-intersection-observer';
 import { ArticleMeta } from '../../types/articles';
 import { capitalizeFirstWord } from '../../utils/utils';
 import { useNavState } from '../../utils/zustand/navState';
+import { FancyQuote } from '../reusable/quote';
+import { SectionTitle } from '../reusable/sectionTitle';
 
 interface Props {
     articles: ArticleMeta[];
@@ -26,11 +27,8 @@ const ArticlePreview = ({ articles }: Props) => {
     }, [inView]);
 
     return (
-        <div ref={latestRef} id='latest' className='mt-10 min-h-screen-3/4'>
-            <h2 className='text-3xl tracking-tight text-neutral-200 sm:text-4xl'>
-                Latest Writings
-            </h2>
-
+        <div ref={latestRef} id='latest' className='my-10 min-h-screen-3/4'>
+            <SectionTitle text='Latest Writings' />
             <div className='grid gap-16 mt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12'>
                 {articles.map((article) => (
                     <Link href={`/writings/${article.slug}`} key={article.slug}>
@@ -66,28 +64,7 @@ const ArticlePreview = ({ articles }: Props) => {
                     </Link>
                 ))}
             </div>
-            <div className='py-12 px-4 mx-auto sm:px-6 md:flex md:flex-col md:py-24 md:px-30 md:max-w-screen-md lg:px-40 opacity-30 hover:opacity-60 hover:scale-110 transition-all transform ease-in-out duration-[3000ms]'>
-                <blockquote className='mt-6 md:flex md:flex-grow md:flex-col pointer-events-none'>
-                    <div className='relative text-lg text-neutral-200 md:flex-grow'>
-                        <RiDoubleQuotesL className='absolute top-0 left-0 h-12 w-12 -translate-x-3 -translate-y-2 transform text-orange-600 opacity-50' />
-                        <p className='relative italic'>
-                            If a thing can be done adequately by means of one,
-                            it is superfluous to do it by means of several; for
-                            we observe that nature does not employ two
-                            instruments where one suffices.
-                        </p>
-                    </div>
-                    <footer className='mt-8'>
-                        <div className='flex flex-row-reverse sm:flex-row'>
-                            <div className='mr-10 sm:ml-10'>
-                                <div className='text-neutral-200'>
-                                    Thomas Aquinas
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </blockquote>
-            </div>
+            <FancyQuote quoteId={3} />
         </div>
     );
 };
