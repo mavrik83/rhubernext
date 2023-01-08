@@ -190,10 +190,10 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
                                     <div className='group block w-full flex-shrink-0'>
                                         <div className='flex items-center mb-3'>
                                             <a href='https://www.linkedin.com/in/mavrik83/'>
-                                                <SiLinkedin className='text-2xl text-orange-600 mr-3' />
+                                                <SiLinkedin className='text-2xl text-teal-500 mr-3' />
                                             </a>
                                             <a href='https://www.github.com/mavrik83'>
-                                                <SiGithub className='text-2xl text-orange-600 mx-3' />
+                                                <SiGithub className='text-2xl text-teal-500 mx-3' />
                                             </a>
                                         </div>
                                         <div className='flex items-center'>
