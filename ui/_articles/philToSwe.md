@@ -5,6 +5,7 @@ date: "2022-12-24"
 timeToRead: 4
 category: "philosophy"
 author: "ChatGPT & Ryan Huber"
+inProgress: false
 ---
 
 ## Introduction

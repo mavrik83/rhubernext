@@ -24,6 +24,7 @@ export function getArticleBySlug(slug: string): ArticleInfo {
             timeToRead: data.timeToRead,
             category: data.category,
             author: data.author,
+            inProgress: data.inProgress,
         },
         content,
     };
@@ -33,6 +34,7 @@ export function getAllArticles() {
     const slugs = getArticleSlugs().filter((slug) => slug !== '_template.md');
     const articles = slugs
         .map((slug) => getArticleBySlug(slug))
+        .filter((article) => !article.meta.inProgress)
         // sort posts by date in descending order
         .sort((post1, post2) => (post1.meta.date > post2.meta.date ? -1 : 1));
     return articles;

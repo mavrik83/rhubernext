@@ -5,6 +5,7 @@ date: "2022-12-23"
 timeToRead: 1
 category: "coding"
 author: "ChatGPT & Ryan Huber"
+inProgress: false
 ---
 
 ## What are Time Series Databases?

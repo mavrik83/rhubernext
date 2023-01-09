@@ -6,6 +6,7 @@ export interface ArticleMeta {
     category: string;
     timeToRead: number;
     author: string;
+    inProgress: boolean;
 }
 
 export interface ArticleInfo {

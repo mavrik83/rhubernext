@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable consistent-return */
 import Link from 'next/link';
 import React from 'react';
 import { TbCalendarTime } from 'react-icons/tb';
@@ -29,7 +27,10 @@ const ArticlePreview = ({ articles }: Props) => {
     return (
         <div ref={latestRef} id='latest' className='my-10 min-h-screen-3/4'>
             <SectionTitle text='Latest Writings' />
-            <div className='grid gap-16 mt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12'>
+            <Link href='/writings'>
+                <p className='text-teal-500 cursor-pointer w-fit'>More...</p>
+            </Link>
+            <div className='grid gap-16 mt-9 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12'>
                 {articles.map((article) => (
                     <Link href={`/writings/${article.slug}`} key={article.slug}>
                         <a className='shadow-sm shadow-orange-700 sm:shadow-none sm:border border-neutral-500 rounded-md bg-inherit hover:bg-neutral-800 hover:border-neutral-800 transition-all duration-300'>
