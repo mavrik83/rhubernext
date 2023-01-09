@@ -17,9 +17,26 @@ type Props = {
 
 const Home: NextPage<Props> = ({ latestArticles }: Props) => {
     const articles: ArticleMeta[] = latestArticles.map((article) => {
-        const { title, synopsis, date, slug, timeToRead, category, author } =
-            article.meta;
-        return { title, synopsis, date, slug, timeToRead, category, author };
+        const {
+            title,
+            synopsis,
+            date,
+            slug,
+            timeToRead,
+            category,
+            author,
+            inProgress,
+        } = article.meta;
+        return {
+            title,
+            synopsis,
+            date,
+            slug,
+            timeToRead,
+            category,
+            author,
+            inProgress,
+        };
     });
 
     return (

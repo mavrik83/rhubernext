@@ -19,9 +19,9 @@ const randomInteger = (min: number, max: number) =>
 
 const Writings: NextPage<Props> = ({ allArticles }: Props) => {
     const articles: ArticleMeta[] = allArticles.map((article) => {
-        const { title, synopsis, date, slug, timeToRead, category, author } =
+        const { title, synopsis, date, slug, timeToRead, category, author, inProgress } =
             article.meta;
-        return { title, synopsis, date, slug, timeToRead, category, author };
+        return { title, synopsis, date, slug, timeToRead, category, author, inProgress };
     });
 
     return (
