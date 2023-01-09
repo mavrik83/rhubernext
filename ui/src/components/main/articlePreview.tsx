@@ -49,7 +49,7 @@ const ArticlePreview = ({ articles }: Props) => {
                             <div className='mt-4 flex items-center'>
                                 <div>
                                     <div className='flex m-4 space-x-1 text-sm text-neutral-200'>
-                                        <TbCalendarTime className='flex-shrink-0 h-4 w-4 text-orange-600' />
+                                        <TbCalendarTime className='flex-shrink-0 h-4 w-4 text-teal-500' />
                                         <time dateTime={article.date}>
                                             {article.date}
                                         </time>
