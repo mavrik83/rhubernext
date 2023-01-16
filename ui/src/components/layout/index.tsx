@@ -189,10 +189,16 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
                                 <div className='flex flex-shrink-0 bg-neutral-900 p-4'>
                                     <div className='group block w-full flex-shrink-0'>
                                         <div className='flex items-center mb-3'>
-                                            <a href='https://www.linkedin.com/in/mavrik83/'>
+                                            <a
+                                                href='https://www.linkedin.com/in/mavrik83/'
+                                                target='_blank'
+                                            >
                                                 <SiLinkedin className='text-2xl text-teal-500 mr-3' />
                                             </a>
-                                            <a href='https://www.github.com/mavrik83'>
+                                            <a
+                                                href='https://www.github.com/mavrik83'
+                                                target='_blank'
+                                            >
                                                 <SiGithub className='text-2xl text-teal-500 mx-3' />
                                             </a>
                                         </div>
@@ -292,10 +298,16 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
                         <div className='flex flex-shrink-0 bg-neutral-900 p-4'>
                             <div className='group block w-full flex-shrink-0'>
                                 <div className='flex items-center mb-3'>
-                                    <a href='https://www.linkedin.com/in/mavrik83/'>
+                                    <a
+                                        href='https://www.linkedin.com/in/mavrik83/'
+                                        target='_blank'
+                                    >
                                         <SiLinkedin className='text-2xl text-teal-500 mr-3' />
                                     </a>
-                                    <a href='https://www.github.com/mavrik83'>
+                                    <a
+                                        href='https://www.github.com/mavrik83'
+                                        target='_blank'
+                                    >
                                         <SiGithub className='text-2xl text-teal-500 mx-3' />
                                     </a>
                                 </div>
