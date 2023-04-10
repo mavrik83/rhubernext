@@ -8,6 +8,8 @@ author: "ChatGPT & Ryan Huber"
 inProgress: false
 ---
 
+*I know, I know... I cheated a little by using chatGPT. But in my defense, I wanted to test it out a little. As a disclaimer, I provided all the context and content and used chatGPT to make the structure and form cleaner and more readable.*
+
 ## Introduction
 
 I'm a philosopher, and I've always loved logic. It's the foundation of so much of what we do as human beings, as well as being a challenging and interesting subject in itself. Over the years I've looked for ways to apply my knowledge of logic to other things, including software engineering. In this article I'll explain how my love for philosophy led me into software engineering, and how it gave me an advantage over other programmers who didn't come from this background.
