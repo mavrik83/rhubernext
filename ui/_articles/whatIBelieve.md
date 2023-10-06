@@ -5,7 +5,7 @@ date: "2023-04-10"
 timeToRead: 2
 category: "Amazing"
 author: Ryan Huber
-inProgress: false
+inProgress: true
 ---
 
 I believe that the most precious resource to humankind is our children.
