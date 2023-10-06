@@ -5,7 +5,7 @@ date: "2022-12-24"
 timeToRead: 4
 category: "philosophy"
 author: "ChatGPT & Ryan Huber"
-inProgress: false
+inProgress: true
 ---
 
 *I know, I know... I cheated a little by using chatGPT. But in my defense, I wanted to test it out a little. As a disclaimer, I provided all the context and content and used chatGPT to make the structure and form cleaner and more readable.*
